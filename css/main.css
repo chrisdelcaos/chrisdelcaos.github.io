@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Menlo-Regular;
+    src: url(../fonts/Menlo-Regular.ttf)
+}
+
+
+/**/
+
+header {
+    width:100%;
+    height:150px;
+    background: #000;
+    color: #fff;
+    position:fixed;
+    top:0;
+    left:0;
+    transition: all 500ms ease;
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+}
+header.tiny {
+    height:40px;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+}
+
+h1{
+  padding: 0.25em 0;
+  font-size: 3em;
+  text-align: center;
+  transition: all 500ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+}
+  h1.shrinky{
+    font-size: 1em;
+    padding: 0;
+    transition: all 500ms ease;
+      -webkit-transition: all 500ms ease;
+      -moz-transition: all 500ms ease;
+      -o-transition: all 500ms ease;
+  }
+
+body {
+    /*background: white;*/
+    background: #4CB8C4;
+    background: linear-gradient(to left, #4CB8C4, #4CF6AD);
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.menu-toggle.on .one {
+    -moz-transform: rotate(45deg) translate(7px, 7px);
+    -ms-transform: rotate(45deg) translate(7px, 7px);
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.on .two {
+    opacity: 0;
+}
+
+.menu-toggle.on .three {
+    -moz-transform: rotate(-45deg) translate(8px, -10px);
+    -ms-transform: rotate(-45deg) translate(8px, -10px);
+    -webkit-transform: rotate(-45deg) translate(8px, -10px);
+    transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.one, .two, .three {
+    width: 100%;
+    height: 5px;
+    background: #000;
+    margin: 6px auto;
+    backface-visibility: hidden;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    font-family: Menlo-Regular;
+    list-style: none;
+    margin: 4em auto;
+    text-align: center;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+nav ul a {
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    font-size: 5.5em;
+    line-height: 1.5;
+    /*1.5*/
+    width: 100%;
+    display: block;
+}
+
+nav ul a:hover {
+    color: #4CB8C4;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-section.on {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.84);
+    position: absolute;
+}
+
+
+/**/
+
+.centered {
+    font-family: 'Menlo-Regular';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.borde-tabla {
+    border-top: 0.1px solid #000;
+    border-bottom: 0.1px solid #000;
+}
+
+.borde-tabla p {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 12px;
+    /*padding-bottom: 0px;*/
+}
+
+.text-center h5 {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    /*padding-bottom: 0px;*/
+}
+
+.text-center i {}
+
+.text-center .fa {
+    font-size: 28px;
+    color: #414141;
+    text-align: center;
+    letter-spacing: 12px;
+    margin: 10px 0;
+    display: inline-block;
+    /*transition: 0.2s;*/
+}
+
+.fa:hover {
+    transform: scale(1.2);
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+}
+
+.fa-github:hover {
+    color: #000;
+}
