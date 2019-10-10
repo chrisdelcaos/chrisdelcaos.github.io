@@ -49,7 +49,7 @@ h1{
 body {
     /*background: white;*/
     background: #4CB8C4;
-    background: linear-gradient(to left, #4CB8C4, #4CF6AD);
+    background: linear-gradient(to left, #7C26CB, #3CF6AD);/*A369DA*/
     margin: 0;
     padding: 0;
 }
